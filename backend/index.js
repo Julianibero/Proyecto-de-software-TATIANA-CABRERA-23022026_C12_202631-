@@ -2,12 +2,13 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const { swaggerUi, specs } = require('./src/swagger');
 const authRoutes = require('./src/routes/auth.routes');
 const proyectoRoutes = require('./src/routes/proyecto.routes');
 
 const app = express();
 
-aapp.use(cors({
+app.use(cors({
   origin: [
     'http://localhost:3001',
     'http://localhost:3000',
@@ -18,6 +19,9 @@ aapp.use(cors({
 }));
 
 app.use(express.json());
+
+// Swagger
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
 // Rutas
 app.use('/api/auth', authRoutes);

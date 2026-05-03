@@ -3,14 +3,25 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const authRoutes = require('./src/routes/auth.routes');
+const proyectoRoutes = require('./src/routes/proyecto.routes');
 
 const app = express();
 
-app.use(cors());
+aapp.use(cors({
+  origin: [
+    'http://localhost:3001',
+    'http://localhost:3000',
+    '*'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(express.json());
 
 // Rutas
 app.use('/api/auth', authRoutes);
+app.use('/api/proyectos', proyectoRoutes);
 
 // Conexión a MongoDB
 mongoose.connect(process.env.MONGODB_URI, {

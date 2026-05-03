@@ -107,8 +107,4 @@ Headers: Authorization: Bearer TU_TOKEN
 }
 ```
 
-## En progreso
-- Documentación con Swagger
 
-## Pendiente
-- Integración con frontend

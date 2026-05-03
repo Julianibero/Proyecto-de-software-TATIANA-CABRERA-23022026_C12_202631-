@@ -20,6 +20,12 @@ const userSchema = new mongoose.Schema({
     type: String,
     enum: ['visitante', 'creador', 'mentor', 'empresa', 'admin'],
     default: 'creador'
+  },
+  skills: [{
+    type: String
+  }],
+  avatar: {
+    type: String
   }
 }, { timestamps: true });
 

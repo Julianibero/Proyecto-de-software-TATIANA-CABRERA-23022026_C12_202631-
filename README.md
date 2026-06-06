@@ -369,11 +369,9 @@ docker-compose up --build
 
 | Nombre                  | Rol                     | Correo                           |
 |-------------------------|-------------------------|----------------------------------|
-| Hector Daniel Parra     | Product Owner           | hparram1@estudiante.ibero.edu.co |
-| Juan David Ortiz Bravo  | Scrum Master / Analista | jortizbr@estudiante.ibero.edu.co |
-| Luisa Verónica Cruz     | Developer Frontend      | lcruzve1@estudiante.ibero.edu.co |
-| Cristian Steven Abril   | Developer Backend       | cabrilal@estudiante.ibero.edu.co |
-| Julian Vega Joya        | Documentador / QA       | jvegajoy@estudiante.ibero.edu.co |
+| Luisa Verónica Cruz     | Product Owne / Scrum Master / Analista | lcruzve1@estudiante.ibero.edu.co |
+| Cristian Steven Abril   | Developer Backend  | cabrilal@estudiante.ibero.edu.co |
+| Julian Vega Joya        | Developer Backend /  Documentador / QA | jvegajoy@estudiante.ibero.edu.co |
 
 ---
 

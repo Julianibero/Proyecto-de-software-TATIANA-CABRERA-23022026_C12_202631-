@@ -370,7 +370,7 @@ docker-compose up --build
 | Nombre                  | Rol                     | Correo                           |
 |-------------------------|-------------------------|----------------------------------|
 | Luisa Verónica Cruz     | Product Owne / Scrum Master / Analista | lcruzve1@estudiante.ibero.edu.co |
-| Cristian Steven Abril   | Developer Backend  | cabrilal@estudiante.ibero.edu.co |
+| Cristian Steven Abril   | Developer fronetd  | cabrilal@estudiante.ibero.edu.co |
 | Julian Vega Joya        | Developer Backend /  Documentador / QA | jvegajoy@estudiante.ibero.edu.co |
 
 ---

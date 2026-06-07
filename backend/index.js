@@ -12,7 +12,7 @@ app.use(cors({
   origin: [
     'http://localhost:3001',
     'http://localhost:3000',
-    '*'
+    'https://talento-sin-fronteras-front.vercel.app'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
@@ -35,7 +35,6 @@ mongoose.connect(process.env.MONGODB_URI, {
   .then(() => console.log('✅ MongoDB conectado'))
   .catch((err) => console.error('❌ Error conectando a MongoDB:', err));
 
-// Solo iniciar servidor si se ejecuta directamente
 if (require.main === module) {
   const PORT = process.env.PORT || 3000;
   app.listen(PORT, () => {
